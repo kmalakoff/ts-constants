@@ -1,0 +1,39 @@
+{
+  "name": "ts-constants",
+  "version": "0.0.0",
+  "description": "typescript constants extracted",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha-compat test/spec/**/*.test.js --no-timeouts"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmalakoff/ts-constants.git"
+  },
+  "keywords": [
+    "typescript",
+    "constants",
+    "ScriptTarget",
+    "ModuleKind",
+    "JsxEmit"
+  ],
+  "author": "Kevin Malakoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmalakoff/ts-constants/issues"
+  },
+  "homepage": "https://github.com/kmalakoff/ts-constants#readme",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "mocha-compat": "^3.5.5"
+  }
+}
