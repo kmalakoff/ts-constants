@@ -28,6 +28,7 @@
   ],
   "scripts": {
     "build": "",
+    "lint": "",
     "test": "mocha-compat test/spec/**/*.test.js --no-timeouts",
     "test:engines": "nvu engines npm test"
   },
