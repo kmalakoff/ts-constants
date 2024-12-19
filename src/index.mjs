@@ -53,7 +53,7 @@ const ModuleKind = {
 
 const JsxEmit = { 0: 'None', 1: 'Preserve', 2: 'React', 3: 'ReactNative', 4: 'ReactJSX', 5: 'ReactJSXDev', None: 0, Preserve: 1, React: 2, ReactNative: 3, ReactJSX: 4, ReactJSXDev: 5 };
 
-module.exports = {
+export default {
   ScriptTarget: ScriptTarget,
   ModuleKind: ModuleKind,
   JsxEmit: JsxEmit,
