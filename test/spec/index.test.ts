@@ -1,5 +1,7 @@
-const assert = require('assert');
-const ts = require('ts-constants');
+import assert from 'assert';
+
+// @ts-ignore
+import ts from 'ts-constants';
 
 describe('ts-constants', () => {
   it('has ScriptTarget', () => {
