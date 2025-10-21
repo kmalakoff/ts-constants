@@ -3,7 +3,6 @@ name: Publish Package
 on:
   push:
     branches: [ master ]
-    tags: ["v*.*.*"]
 
 permissions:
   id-token: write  # Required for OIDC
@@ -11,6 +10,7 @@ permissions:
 
 jobs:
   publish:
+    if: github.ref_type == 'tag' && startsWith(github.ref_name, 'v') && github.event.base_ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
