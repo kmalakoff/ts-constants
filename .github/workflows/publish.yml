@@ -1,8 +1,10 @@
 name: Publish Package
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ master ]
+    tags:
+      - 'v*'
 
 permissions:
   id-token: write  # Required for OIDC
@@ -10,7 +12,7 @@ permissions:
 
 jobs:
   publish:
-    if: github.ref_type == 'tag' && startsWith(github.ref_name, 'v') && github.event.base_ref == 'refs/heads/master'
+    if: ${{ github.ref_type == 'tag' && startsWith(github.ref_name, 'v') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
