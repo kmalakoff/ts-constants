@@ -1,6 +1,5 @@
 import assert from 'assert';
 
-// @ts-ignore
 import ts from 'ts-constants';
 
 describe('ts-constants', () => {
